@@ -1,0 +1,5 @@
+﻿2,Assets/Model/Enemy/Skeleton/Skeleton.mv1,0,Assets/Model/Enemy/Skeleton/Idle.mv1,1,TRUE,0,TRUE,2
+,,1,Assets/Model/Enemy/Skeleton/Run.mv1,1,TRUE,0,TRUE,
+,,2,Assets/Model/Enemy/Skeleton/Attack.mv1,0.5,FALSE,0,TRUE,
+,,3,Assets/Model/Enemy/Skeleton/Walk.mv1,1,TRUE,0,TRUE,
+,,4,Assets/Model/Enemy/Skeleton/Death.mv1,0.5,FALSE,0,TRUE,

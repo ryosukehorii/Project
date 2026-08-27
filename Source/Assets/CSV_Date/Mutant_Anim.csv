@@ -1,0 +1,11 @@
+﻿3,Assets/Model/Enemy/Mutant/Mutant.mv1,0,Assets/Model/Enemy/Mutant/Idle.mv1,1,TRUE,0,TRUE,3
+,,1,Assets/Model/Enemy/Mutant/Scream.mv1,0.5,FALSE,0,TRUE,
+,,2,Assets/Model/Enemy/Mutant/AttackHorizon.mv1,1,FALSE,0,TRUE,
+,,3,Assets/Model/Enemy/Mutant/Attack360.mv1,1,FALSE,0,TRUE,
+,,4,Assets/Model/Enemy/Mutant/Death.mv1,1,FALSE,0,TRUE,
+,,5,Assets/Model/Enemy/Mutant/SideStep.mv1,0.5,TRUE,0,TRUE,
+,,6,Assets/Model/Enemy/Mutant/JumpAttack.mv1,0.6,FALSE,0,TRUE,
+,,7,Assets/Model/Enemy/Mutant/Run.mv1,0.5,TRUE,0,TRUE,
+,,8,Assets/Model/Enemy/Mutant/Attack_R.mv1,1,FALSE,0,TRUE,
+,,9,Assets/Model/Enemy/Mutant/Attack_L.mv1,1,FALSE,0,TRUE,
+,,10,Assets/Model/Enemy/Mutant/Attack_W.mv1,1,FALSE,0,TRUE,

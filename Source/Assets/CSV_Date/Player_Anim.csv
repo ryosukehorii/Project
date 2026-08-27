@@ -1,0 +1,11 @@
+﻿0,Assets/Model/Player/Player.mv1,0,Assets/Model/Player/PlayerIdle2.mv1,1,TRUE,0,TRUE,1
+,,1,Assets/Model/Player/PlayerRun2.mv1,0.7,TRUE,0,TRUE,
+,,2,Assets/Model/Player/PlayerAttack1_1.mv1,0.5,FALSE,0,TRUE,
+,,3,Assets/Model/Player/PlayerAttack2_1.mv1,0.3,FALSE,6,FALSE,
+,,4,Assets/Model/Player/PlayerAttack3_1.mv1,0.5,FALSE,0,FALSE,
+,,5,Assets/Model/Player/PlayerRoll2.mv1,0.8,FALSE,0,TRUE,
+,,6,Assets/Model/Player/PlayerHitDamage.mv1,0.5,FALSE,0,TRUE,
+,,7,Assets/Model/Player/KnockBack.mv1,1,FALSE,0,TRUE,
+,,8,Assets/Model/Player/PlayerBacksTab.mv1,1,FALSE,0,TRUE,
+,,9,Assets/Model/Player/PlayerKick.mv1,1,FALSE,0,TRUE,
+,,10,Assets/Model/Player/PlayerDie.mv1,1,TRUE,0,TRUE,
