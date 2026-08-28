@@ -40,15 +40,16 @@ void AnimationController::ChangeAnim(int anim_num)
 {
 	MV1DetachAnim(model, attach_index);
 	play_time = 0;
-	attach_index = MV1AttachAnim(model, 0, anim_vec[1].anim);
+	attach_index = MV1AttachAnim(model, 0, anim_vec[anim_num].anim);
 	anim_total_time = MV1GetAttachAnimTotalTime(model, attach_index);
 }
 
 void AnimationController::Draw(VECTOR pos,float angle_y)
 {
+	DrawFormatString(0, 80, GetColor(255, 0, 0), "model %f", angle_y);
 	// 画面に映る位置に３Ｄモデルを移動
 	MV1SetPosition(model, pos);
-	MV1SetRotationXYZ(model, VGet(0.0f, angle_y, 0.0f));
+	MV1SetRotationXYZ(model, VGet(0.0f, angle_y + DX_PI_F, 0.0f));
 	MV1DrawModel(model);
 }
 

@@ -1,6 +1,7 @@
 #include "Character.hpp"
 #include "KeyBord.hpp"
 #include "AnimationController.hpp"
+#include "CameraController.hpp"
 
 #define OFFSETSPEED (1.0f)
 
@@ -9,7 +10,7 @@ void Character::Init()
 	anim_motion = 0;
 	current_motion = -1;
 	move_ctr.Init();
-	rot_ctr.Init();
+	//rot_ctr.Init();
 }
 
 void Character::Update()
@@ -18,10 +19,17 @@ void Character::Update()
 	if (anim_motion != current_motion)
 	{
 		current_motion = anim_motion;
-		anim_ptr->ChangeAnim(current_motion);
+		if (current_motion != Idle)
+		{
+			anim_ptr->ChangeAnim(1);
+		}
+		else
+		{
+			anim_ptr->ChangeAnim(0);
+		}
 	}
-	move_ctr.Update(current_motion,OFFSETSPEED);
-	rot_ctr.Update(move_ctr.GetPos());
+	move_ctr.Update(current_motion, camera_ptr->GetAngle_y());
+	pos = move_ctr.GetPos();
 }
 
 void  Character::End()
@@ -31,5 +39,5 @@ void  Character::End()
 
 void Character::Draw()
 {
-	anim_ptr->Draw(move_ctr.GetPos(), rot_ctr.GetAngle());
+	anim_ptr->Draw(pos, move_ctr.GetAngle());
 }

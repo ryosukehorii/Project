@@ -8,29 +8,23 @@ void KeyBord ::Init()
 
 void KeyBord::Update()
 {
+	char bit = 0x00;
+
 	if (CheckHitKey(KEY_INPUT_W) == 1)
 	{
-		key = 1;
-		printf("W");
+		bit |= 0x01;
 	}
-	else if (CheckHitKey(KEY_INPUT_A) == 1)
+	if (CheckHitKey(KEY_INPUT_A) == 1)
 	{
-		key = 2;
-		printf("A");
+		bit |= 0x02;
 	}
-	else if (CheckHitKey(KEY_INPUT_S) == 1)
+	if (CheckHitKey(KEY_INPUT_S) == 1)
 	{
-		key = 3;
-		printf("S");
+		bit |= 0x04;
 	}
-	else if (CheckHitKey(KEY_INPUT_D) == 1)
+	if (CheckHitKey(KEY_INPUT_D) == 1)
 	{
-		key = 4;
-		printf("D");
-	}
-	else
-	{
-		key = 0;
+		bit |= 0x08;
 	}
 }
 
