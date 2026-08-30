@@ -41,3 +41,17 @@ void Character::Draw()
 {
 	anim_ptr->Draw(pos, move_ctr.GetAngle());
 }
+
+void Character::CheckMotion()
+{
+	char key;
+	key = key_ptr->GetKey();
+	if(key!=0)
+	{
+		anim_motion = 1;
+	}
+	else
+	{
+		anim_motion = Idle;
+	}
+}

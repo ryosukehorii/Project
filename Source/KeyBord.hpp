@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Dxlib.h"
+class MoveController;
 
 class KeyBord
 {
@@ -8,7 +9,8 @@ public:
 	void Init();
 	void Update();
 	void End();
-	int GetKey() const { return key; };
+	char GetKey() const { return key; };
 private:
-	int key;
+	char key;
+	void KeyCheck(char key);
 };

@@ -2,13 +2,16 @@
 #include "Dxlib.h"
 typedef enum
 {
-	Idle,
+    Idle,
     Front,
     Left,
     Back,
-    Right
-	
-}Dir;
+    Right,
+    FrontLeft,   // ëOÅ{ç∂
+    FrontRight,  // ëOÅ{âE
+    BackLeft,    // å„Å{ç∂
+    BackRight    // å„Å{âE
+} Dir;
 
 class MoveController
 {

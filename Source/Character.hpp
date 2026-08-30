@@ -30,6 +30,7 @@ public:
 	float GetOffSetY() { return offset_y; };
 
 private:
+	void CheckMotion();
 	int anim_motion{0};
 	int current_motion{-1};
 	VECTOR pos{0,0,0};
