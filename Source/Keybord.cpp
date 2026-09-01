@@ -9,7 +9,7 @@ void KeyBord::Init()
 
 void KeyBord::Update()
 {
-	char bit = 0x00;
+	unsigned char bit = 0x00;
 
 	if (CheckHitKey(KEY_INPUT_W) == 1)
 	{
@@ -27,58 +27,28 @@ void KeyBord::Update()
 	{
 		bit |= 0x08;
 	}
-	KeyCheck(bit);
+	//攻撃
+	if ((GetMouseInput() & MOUSE_INPUT_LEFT) != 0)
+	{
+		bit |= 0x80;
+	}
+	//ガード
+	if ((GetMouseInput() & MOUSE_INPUT_RIGHT) != 0)
+	{
+		bit |= 0x40;
+	}
+	//回避
+	if (CheckHitKey(KEY_INPUT_LCONTROL) == 1)
+	{
+		bit |= 0x20;
+	}
+	if (CheckHitKey(KEY_INPUT_SPACE) == 1)
+	{
+		bit |= 0x10;
+	}
+	key = bit;
 }
 
 void KeyBord::End()
 {
-}
-
-void KeyBord::KeyCheck(char bit)
-{
-	
-	if ((bit & 0x01) && (bit & 0x02)) 
-	{
-		// W + A → 左上
-		key = FrontLeft;
-		
-	}
-	else if ((bit & 0x01) && (bit & 0x08)) 
-	{
-		// W + D → 右上
-		key = FrontRight;
-	}
-	else if ((bit & 0x04) && (bit & 0x02)) 
-	{
-		// S + A → 左下
-		key = BackLeft;
-	}
-	else if ((bit & 0x04) && (bit & 0x08)) 
-	{
-		// S + D → 右下
-		key = BackRight;
-	}
-	else if (bit & 0x01) 
-	{
-		key = Front;
-	}
-	else if (bit & 0x02) 
-	{
-		key = Left;
-	}
-	else if (bit & 0x04) 
-	{
-		key = Back;
-	}
-	else if (bit & 0x08) 
-	{
-		key = Right;
-	}
-	else 
-	{
-		key = Idle;
-	}
-
-
-	DrawFormatString(0, 100, GetColor(255, 0, 0), "model %d", key);
 }

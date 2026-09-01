@@ -9,8 +9,8 @@ public:
 	void Init();
 	void Update();
 	void End();
-	char GetKey() const { return key; };
+	unsigned char GetKey() const { return key; };
 private:
-	char key;
-	void KeyCheck(char key);
+	unsigned char key;
+	void KeyCheck(unsigned char key);
 };

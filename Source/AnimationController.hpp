@@ -20,12 +20,14 @@ public:
 	void End();
 	void ChangeAnim(int anim_num);
 	void Draw(VECTOR pos, float angle_y);
+	bool GetPlay() { return play; };
 private:
-	int model;
-	int anim_motion;
-	float play_time;
-	int attach_index;
-	float anim_total_time;
+	int model{ 0 };
+	int anim_motion{ 0 };
+	float play_time{ 0 };
+	int attach_index{0};
+	float anim_total_time{0};
+	bool play{false};
 	vector<AnimInfo>anim_vec;
 };
 

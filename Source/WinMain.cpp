@@ -2,7 +2,6 @@
 
 #include "KeyBord.hpp"
 #include "Character.hpp"
-#include "AnimationController.hpp"
 #include "CameraController.hpp"
 
 #define SCREAN_SIZEX (1200)
@@ -30,21 +29,18 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
     Character character;
     KeyBord key;
-    AnimationController animation;
     CameraController camera;
 
     key.Init();
     character.Init();
-    animation.Init();
     camera.Init();
-    character.SetBind(animation, key, camera);
+    character.SetBind(key, camera);
 
     while(CheckHitKey(KEY_INPUT_Z) == 0)
     {
         ClearDrawScreen();  // âÊñ è¡ãé
         key.Update();
         character.Update();
-        animation.Update();
         camera.Update();
 
         camera.SetCamera(character.GetMyPos(), character.GetOffSetY());

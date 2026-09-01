@@ -36,6 +36,24 @@
     <ClCompile Include="CameraController.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="ActionStateController.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerState.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="IdleState.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="RunState.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackState.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="RoolState.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="KeyBord.hpp">
@@ -54,6 +72,24 @@
       <Filter>WinMain</Filter>
     </ClInclude>
     <ClInclude Include="CameraController.hpp">
+      <Filter>WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionStateController.hpp">
+      <Filter>WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerState.hpp">
+      <Filter>WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="IdleState.hpp">
+      <Filter>WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="RunState.hpp">
+      <Filter>WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackState.hpp">
+      <Filter>WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="RoolState.hpp">
       <Filter>WinMain</Filter>
     </ClInclude>
   </ItemGroup>

@@ -20,20 +20,32 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimationController.cpp" />
+    <ClCompile Include="AttackState.cpp" />
     <ClCompile Include="CameraController.cpp" />
     <ClCompile Include="Character.cpp" />
+    <ClCompile Include="IdleState.cpp" />
     <ClCompile Include="KeyBord.cpp" />
+    <ClCompile Include="ActionStateController.cpp" />
     <ClCompile Include="MoveController.cpp" />
+    <ClCompile Include="PlayerState.cpp" />
+    <ClCompile Include="RoolState.cpp" />
     <ClCompile Include="RotationController.cpp" />
+    <ClCompile Include="RunState.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimationController.hpp" />
+    <ClInclude Include="AttackState.hpp" />
     <ClInclude Include="CameraController.hpp" />
     <ClInclude Include="Character.hpp" />
+    <ClInclude Include="IdleState.hpp" />
     <ClInclude Include="KeyBord.hpp" />
+    <ClInclude Include="ActionStateController.hpp" />
     <ClInclude Include="MoveController.hpp" />
+    <ClInclude Include="PlayerState.hpp" />
+    <ClInclude Include="RoolState.hpp" />
     <ClInclude Include="RotationController.hpp" />
+    <ClInclude Include="RunState.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -46,27 +58,27 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>&lt;別のオプション&gt;</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>&lt;別のオプション&gt;</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
