@@ -1,4 +1,5 @@
-// ActionStateController.hpp
+#pragma once
+
 #include <memory>
 #include "PlayerState.hpp"
 
@@ -16,12 +17,14 @@ public:
 	PlayerState* GetIdleState() { return idle_state.get(); }
 	PlayerState* GetRunState() { return run_state.get(); }
 	PlayerState* GetAttackState() { return attack_state.get(); }
+	PlayerState* GetRollState() { return roll_state.get(); }
 
 private:
 	// 各ステートのインスタンスを所有
 	std::unique_ptr<PlayerState> idle_state;
 	std::unique_ptr<PlayerState> run_state;
 	std::unique_ptr<PlayerState> attack_state;
+	std::unique_ptr<PlayerState> roll_state;
 
 	// 現在のステート
 	PlayerState* current_state = nullptr;

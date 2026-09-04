@@ -3,5 +3,8 @@
 
 class RoolState : public PlayerState
 {
+	void Enter(Character* owner)override;
+	void Update(Character* owner)override;
+	void Exit(Character* owner)override;
 };
 

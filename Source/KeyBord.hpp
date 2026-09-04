@@ -10,7 +10,12 @@ public:
 	void Update();
 	void End();
 	unsigned char GetKey() const { return key; };
+	unsigned char GetTriggerKey()const;
+
 private:
-	unsigned char key;
+	unsigned char key{ 0x00 };
+	unsigned char prev_key{ 0xff };
+
+	bool trigger_key{ false };
 	void KeyCheck(unsigned char key);
 };

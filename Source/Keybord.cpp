@@ -4,7 +4,9 @@
 
 void KeyBord::Init()
 {
-	key = 0;
+	key = 0x00;
+	prev_key = 0xff;
+	trigger_key = false;
 }
 
 void KeyBord::Update()
@@ -47,8 +49,18 @@ void KeyBord::Update()
 		bit |= 0x10;
 	}
 	key = bit;
+	prev_key = key;
 }
 
 void KeyBord::End()
 {
+}
+
+unsigned char KeyBord::GetTriggerKey() const
+{
+	unsigned char trigger;
+
+	trigger = key & ~prev_key;
+
+	return trigger;
 }

@@ -1,7 +1,6 @@
 #pragma once
 
 #include "PlayerState.hpp"
-#define MOTION_RUN (1)
 
 class RunState : public PlayerState
 {

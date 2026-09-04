@@ -1,8 +1,6 @@
 #pragma once
 #include "PlayerState.hpp"
 
-#define MOTION_IDLE (0)
-
 class IdleState : public PlayerState
 {
 public:

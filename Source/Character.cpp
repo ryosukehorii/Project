@@ -9,8 +9,8 @@ void Character::Init()
 {
 	anim_motion = 0;
 	current_motion = -1;
+	action_state_ctr.Init();
 	move_ctr.Init();
-	
 	anim_ctr.Init();
 }
 

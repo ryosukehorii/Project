@@ -21,6 +21,8 @@ public:
 	void ChangeAnim(int anim_num);
 	void Draw(VECTOR pos, float angle_y);
 	bool GetPlay() { return play; };
+	float GetPlayRate() const;
+
 private:
 	int model{ 0 };
 	int anim_motion{ 0 };

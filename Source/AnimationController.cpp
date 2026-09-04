@@ -71,3 +71,13 @@ void AnimationController::End()
 {
 	MV1DeleteModel(model);
 }
+
+float AnimationController::GetPlayRate() const
+{
+	if (anim_total_time <= 0.0f)
+	{
+		return 0.0f;
+	}
+
+	return play_time / anim_total_time;
+}

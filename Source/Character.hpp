@@ -29,8 +29,10 @@ public:
 
 	VECTOR GetMyPos() const { return pos; };
 	float GetOffSetY() const { return offset_y; };
-	AnimationController GetAnimCtr() { return anim_ctr; };
-	MoveController GetMoveCtr() { return move_ctr; };
+
+	AnimationController& GetAnimCtr() { return anim_ctr; };
+	MoveController& GetMoveCtr() { return move_ctr; };
+	ActionStateController& GetActionCtr() { return action_state_ctr; };
 
 	const KeyBord* GetKeyPtr() { return key_ptr; };
 	const CameraController* GetCamePtr() { return camera_ptr; };
